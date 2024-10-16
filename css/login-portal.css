@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Full-height layout for the login portal */
+/* Dark Theme with better contrast */
+body, html {
+    height: 100%;
+    background-color: #181818; /* Darker background for better contrast */
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean and modern font */
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+}
+
+/* Portal section styling */
+.portal-section {
+    background-color: #252525;
+    padding: 40px;
+    border-radius: 15px; /* Softer edges */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* More dramatic shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-section h2 {
+    margin-bottom: 20px;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+.portal-section p {
+    color: #cccccc;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.portal-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.btn-block {
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; /* Rounded buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-block:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.btn-primary {
+    background-color: #0069d9;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #b21f33;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+/* Registration link styling */
+.register-link {
+    color: #4aa3ff; /* Light blue for better visibility */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .portal-section {
+        margin-bottom: 30px;
+    }
+}

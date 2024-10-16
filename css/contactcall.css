@@ -1,0 +1,84 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Contact form section */
+.contact-form-section {
+    padding: 50px;
+    text-align: center;
+    background-image: url('images/event3.jpg'); /* Add your background image path here */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Changes text color for better contrast with background */
+}
+
+.contact-form-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white; /* Adjust text color for better readability */
+}
+
+.contact-form-section p {
+    margin-bottom: 40px;
+    color: #ddd; /* Lightened color for readability */
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+}
+
+.btn-submit {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Header Adjustments */
+.header-spacer {
+    height: 60px; /* This matches the header height in header.css */
+}

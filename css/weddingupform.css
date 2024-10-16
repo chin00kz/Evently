@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background for a nice contrast */
+    color: white; /* White text color for readability */
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700; /* Gold color for the heading */
+}
+
+form {
+    background-color: #1a1a1a; /* Slightly lighter background for the form */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 500px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Space inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ecf0f1; /* Light background for inputs */
+    color: #2c3e50; /* Dark text color */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Remove spinner from number input */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove spinner from number input for Chrome */
+}
+
+button {
+    background-color: #ffd700; /* Gold button color */
+    color: #2c3e50; /* Dark text color */
+    border: none; /* Remove border */
+    padding: 12px; /* Space inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #e6c21e; /* Darker gold on hover */
+}

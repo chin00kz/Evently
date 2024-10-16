@@ -1,0 +1,214 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>com.customer.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/log</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- for insert account sense -->
+     <servlet>
+        <servlet-name>customerinsert</servlet-name>
+        <servlet-class>com.customer.customerinsert</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>customerinsert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+    <!-- for update account sense -->
+     <servlet>
+        <servlet-name>updateaccount</servlet-name>
+        <servlet-class>com.customer.UpdateCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateaccount</servlet-name>
+        <url-pattern> /update </url-pattern>
+       </servlet-mapping>
+       
+      <!-- for delete account sense -->
+        <servlet>
+        <servlet-name>deletecustomer</servlet-name>
+        <servlet-class>com.customer.DeleteCustomerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deletecustomer</servlet-name>
+        <url-pattern> /delete </url-pattern>
+       </servlet-mapping>
+       
+       <!-- for admin validation and show admin data-->
+        <servlet>
+        <servlet-name>adlog</servlet-name>
+        <servlet-class>com.customer.AdminLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adlog</servlet-name>
+        <url-pattern>/adlog</url-pattern>
+    </servlet-mapping>
+    
+     <!-- for admin validation and show supplier data-->
+      <servlet>
+        <servlet-name>suplog</servlet-name>
+        <servlet-class>com.customer.SupplierLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>suplog</servlet-name>
+        <url-pattern>/suplog</url-pattern>
+    </servlet-mapping>
+    
+    
+    <!-- for admin update account sense -->
+     <servlet>
+        <servlet-name>updateadmin</servlet-name>
+        <servlet-class>com.customer.AdminUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateadmin</servlet-name>
+        <url-pattern> /updateadmin </url-pattern>
+       </servlet-mapping>
+       
+     <!-- for admin update view support staff sense -->
+     <servlet>
+    <servlet-name>staffdetails</servlet-name>
+    <servlet-class>com.customer.StaffDetailsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>staffdetails</servlet-name>
+    <url-pattern>/staffdetails</url-pattern>
+</servlet-mapping>
+
+ <!-- for admin add supplier account sense -->
+     <servlet>
+        <servlet-name>supplieradd</servlet-name>
+        <servlet-class>com.customer.SupplierAddServlet</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>supplieradd</servlet-name>
+        <url-pattern>/supadd</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+     <!-- for admin view user account sense -->
+     <servlet>
+    <servlet-name>userdetails</servlet-name>
+    <servlet-class>com.customer.UserDetailsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>userdetails</servlet-name>
+    <url-pattern>/userinfo</url-pattern>
+</servlet-mapping>
+
+<!-- for  add supplier service sense -->
+     <servlet>
+        <servlet-name>addSupplierService</servlet-name>
+        <servlet-class>com.customer.AddSupplierServiceServlet</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>addSupplierService</servlet-name>
+        <url-pattern>/addsupservice</url-pattern>
+    </servlet-mapping>
+
+<!-- for view  supplier service sense -->
+     <servlet>
+        <servlet-name>servicedetails</servlet-name>
+        <servlet-class>com.customer.SupplierServiceServlet</servlet-class>
+    </servlet>
+    
+     <servlet-mapping>
+        <servlet-name>servicedetails</servlet-name>
+        <url-pattern>/serviceinfo</url-pattern>
+    </servlet-mapping>
+    
+    
+      <!-- for staff update account sense -->
+     <servlet>
+        <servlet-name>updatestaff</servlet-name>
+        <servlet-class>com.customer.StaffUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updatestaff</servlet-name>
+        <url-pattern> /staffup </url-pattern>
+       </servlet-mapping>
+       
+<!-- for delete staff account sense -->
+        <servlet>
+        <servlet-name>deletesupplier</servlet-name>
+        <servlet-class>com.customer.DeleteSupplierAccount</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deletesupplier</servlet-name>
+        <url-pattern> /deletesup </url-pattern>
+       </servlet-mapping>
+       
+         <!-- for insert  wedding  sense -->
+     <servlet>
+        <servlet-name>insertwedding</servlet-name>
+        <servlet-class>com.customer.WeddingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertwedding</servlet-name>
+        <url-pattern> /insertwedd </url-pattern>
+       </servlet-mapping>
+       
+       <!-- for delete staff account sense -->
+        <servlet>
+        <servlet-name>deleteservice</servlet-name>
+        <servlet-class>com.customer.DeleteServiceServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deleteservice</servlet-name>
+        <url-pattern> /deleteserv </url-pattern>
+       </servlet-mapping>
+       
+       
+       
+       <!-- for admin delete  support staff sense -->
+     <servlet>
+    <servlet-name>deletestaff</servlet-name>
+    <servlet-class>com.customer.DeleteStaffAdminServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>deletestaff</servlet-name>
+    <url-pattern>/deletestaffad</url-pattern>
+</servlet-mapping>
+
+<servlet>
+        <servlet-name>WeddingView</servlet-name>
+        <servlet-class>com.customer.WeddingViewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WeddingView</servlet-name>
+        <url-pattern>/WeddingViewServle</url-pattern> 
+    </servlet-mapping>
+
+       
+</web-app>

@@ -1,0 +1,203 @@
+/* General Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Page Structure */
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/event1.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1 {
+    z-index: 2;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    z-index: 2;
+    font-size: 24px;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Counter Section with Description */
+.counters {
+    background: linear-gradient(135deg, #252540, #1a1a2e);
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    color: #ddd;
+}
+
+.counters .description {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.counters .description h3 {
+    font-size: 24px;
+    color: #ff8a00;
+    margin-bottom: 15px;
+}
+
+.counters .counter-items {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter-item {
+    background: #333344;
+    padding: 30px;
+    border-radius: 10px;
+    width: 150px;
+    margin: 0 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.counter-item:hover {
+    transform: translateY(-10px);
+}
+
+.counter-item h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.counter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ff8a00;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-logo p {
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.footer-contact, .footer-social {
+    max-width: 300px;
+}
+
+.footer-contact h3, .footer-social h3 {
+    margin-bottom: 15px;
+}
+
+.footer-contact p, .footer-social ul {
+    margin: 5px 0;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .counters {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .counters .counter-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counter-item {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

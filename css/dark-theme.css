@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container for the account details */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #f4f4f9;
+    margin-bottom: 30px;
+}
+
+/* Table Styling */
+.account-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a2a2a;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.account-table th, .account-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #404040;
+}
+
+.account-table th {
+    background-color: #333;
+    color: #f4f4f9;
+    font-weight: bold;
+}
+
+.account-table td {
+    color: #e0e0e0;
+}
+
+.account-table tr:hover {
+    background-color: #3a3a3a;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .account-table th, .account-table td {
+        padding: 10px;
+    }
+}

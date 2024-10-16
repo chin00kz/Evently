@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for unsuccess message */
+.unsuccess-container {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading and message styling */
+h1 {
+    color: #ff3b3b; /* Red color for failure */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #f4f4f9;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e64a19;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+    .unsuccess-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

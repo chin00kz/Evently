@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* Container for the page */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body{
+	background-color:#1a1a1a;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table thead {
+    background-color: #4aa3ff;
+    color: #fff;
+}
+
+table thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+table tbody tr {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+table tbody td {
+    padding: 12px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Add New Service button */
+.btn {
+    display: inline-block;
+    background-color: #4aa3ff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3979cc;
+}

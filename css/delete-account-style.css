@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Update Container Styling */
+.update-container {
+    max-width: 600px; /* Set max width for the form */
+    margin: 50px auto; /* Center the form horizontally and vertically */
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter than body */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Heading Style */
+h2 {
+    text-align: center;
+    color: #f4f4f9; /* Light color for headings */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove double borders */
+    margin: 20px 0; /* Space above and below */
+}
+
+/* Table Cell Styling */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #444; /* Darker border */
+}
+
+/* Label Styling */
+label {
+    color: #a0a0a0; /* Lighter color for labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input Field Styling */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Full width */
+    padding: 10px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #333; /* Darker background for inputs */
+    color: #f4f4f9; /* Light text color */
+}
+
+/* Submit Button Styling */
+.btn {
+    background-color: #ff5722; /* Bright color for delete button */
+    color: white; /* White text */
+    padding: 12px;
+    width: 100%; /* Full width */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-top: 20px; /* Space above button */
+}
+
+.btn:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Readonly Input Style */
+input[readonly] {
+    background-color: #444; /* Slightly lighter background for readonly fields */
+    color: #a0a0a0; /* Lighter text color for readonly fields */
+}
