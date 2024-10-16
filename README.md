@@ -63,6 +63,7 @@ The **Event Management System** is a web-based application designed to facilitat
 - **RomeshCG** -- Full-stack developer
 - **Prasad** -- Full-stack developer
 - **SunethH** -- Full-stack developer
+- **ChanukaW** -- Full-stack developer
 
 ## License
 This project is licensed under the MIT License.
