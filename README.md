@@ -1,16 +1,16 @@
-# Wedding Event Management System
+## Wedding Event Management System – Evently
 
 ## Overview
-The **Event Management System** is a web-based application designed to facilitate the booking, management, and administration of  events. This system allows users to book weddings, view details of their bookings, and make updates, while admins can manage all event data including creating, updating, and deleting events and services.
+**Evently** is a web-based wedding event management platform developed as a university group project. It enables users to book weddings, manage bookings, and view services, while administrators can manage all event-related data such as adding, editing, or removing events and service providers.
 
 ## Features
-- User registration and login
-- Event booking system
-- Admin panel for managing events
-- CRUD (Create, Read, Update, Delete) functionalities for events
-- View and manage service providers (e.g., catering, DJ, etc.)
-- Dynamic forms for event updates
-- Built using Java Servlets, JSP, and MySQL database
+- User registration and authentication
+- Wedding event booking system
+- Admin panel for full control over events and services
+- CRUD operations for managing event data
+- Manage service providers (catering, DJ, decorations, etc.)
+- Dynamic form handling for event updates
+- Built using Java Servlets, JSP, and MySQL
 
 ## Technology Stack
 - **Frontend**: HTML, CSS, JSP
@@ -22,48 +22,47 @@ The **Event Management System** is a web-based application designed to facilitat
 
 ### Prerequisites
 - Java 8+
-- Apache Tomcat server
+- Apache Tomcat
 - MySQL
-- IDE (e.g., Eclipse)
+- IDE (e.g., Eclipse or IntelliJ)
 - Git
 
 ### Setup Instructions
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/romeshcg/evently.git
-    cd Evently
+    git clone https://github.com/your-username/evently.git
+    cd evently
     ```
 
 2. **Set up the database**:
-   - Open MySQL Workbench and create a new database named `Evently`.
-   - Import the provided SQL script (`evently.sql`) located in the repository to set up the necessary tables.
+   - Open MySQL Workbench and create a new database named `evently`.
+   - Import the provided SQL script (`evently.sql`) to set up the tables and seed data.
 
-3. **Configure the project**:
-   - Open the project in Eclipse or your preferred IDE.
-   - Set up the database connection in `DBConnect.java`:
+3. **Configure the database connection**:
+   - Edit `DBConnect.java`:
      ```java
      public class DBConnect {
-         private static String url = "jdbc:mysql://localhost:3306/wedding_events_db";
+         private static String url = "jdbc:mysql://localhost:3306/evently";
          private static String user = "root";
-         private static String password = "123456";
+         private static String password = "your-password";
      }
      ```
 
-4. **Deploy the application**:
-   - Run the application on an Apache Tomcat server.
-   - Access the system by opening your browser and navigating to `http://localhost:8080/Evently` (or your configured Tomcat port).
+4. **Run the application**:
+   - Deploy the project to Apache Tomcat.
+   - Visit `http://localhost:8080/Evently` in your browser.
 
 ## Folder Structure
-- **/src**: Contains the source code including servlets, utility classes, and models.
-- **/WebContent**: Contains the JSP files and static resources (CSS, JS).
-- **/sql**: SQL scripts to set up the database schema.
+- `/src`: Java source files (servlets, models, utilities)
+- `/WebContent`: JSP pages, CSS, and JS files
+- `/sql`: SQL schema and data files
 
 ## Contributors
-- **RomeshCG** -- Full-stack developer
-- **Prasad** -- Full-stack developer
-- **SunethH** -- Full-stack developer
-- **ChanukaW** -- Full-stack developer
+- **ChanukaW** – Full-stack development
+- **RomeshCG** – Full-stack development
+- **Prasad** – Full-stack development
+- **SunethH** – Full-stack development 
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
